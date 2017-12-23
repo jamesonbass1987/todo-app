@@ -1,3 +1,7 @@
-body {
-  background: purple;
+/* MAIN STYLING */
+
+#container {
+  background: gray;
+  width: 500px;
+  margin: 0 auto;
 }
