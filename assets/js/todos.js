@@ -18,7 +18,7 @@ $("#newTodo").keypress(function(event){
     //grab text from input
     let todoText = $(this).val()
     //create new li and add to ul
-    $('ul').append(`<li class="noselect"><span>X</span> ${todoText}</li>`)
+    $('ul').append(`<li class="noselect"><span><i class="fa fa-trash" aria-hidden="true"></i></span> ${todoText}</li>`)
     //remove value
     $(this).val("")
   }

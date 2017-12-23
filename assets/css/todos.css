@@ -9,6 +9,10 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background: #085078;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 h1 {
@@ -21,17 +25,23 @@ h1 {
   font-weight: 400;
 }
 
+.fa-plus {
+  float: right;
+}
+
+
 /*  INPUT */
 
 input {
   font-size: 18px;
+  color: #2980b9;
   background-color: #f7f7f7;
   width: 100%;
-  padding: 13px 13px 13px 20px;
+  padding: 11px 11px 11px 20px;
+  border: 3px solid rgba(0, 0, 0, 0);
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  color: #2980b9;
 }
 
 input:focus {
@@ -56,7 +66,6 @@ ul {
 li {
   background: #fff;
   height: 40px;
-  padding: 5px;
   line-height: 40px;
   color: #666;
 }
@@ -73,4 +82,21 @@ li:nth-child(2n) {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+
+span {
+  background: #e74c3c;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0;
+  display: inline-block;
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+li:hover span {
+  opacity: 1.0;
+  width: 40px;
 }
