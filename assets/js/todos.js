@@ -23,3 +23,8 @@ $("#newTodo").keypress(function(event){
     $(this).val("")
   }
 })
+
+//Select + icon and fade input in and out
+$('.fa-plus').click(function(){
+  $("#newTodo").slideToggle(300);
+})
